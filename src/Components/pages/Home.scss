@@ -1,0 +1,27 @@
+@use '../../styles/partials/__variable' as *;
+@use '../../styles/partials/_mixin' as *;
+@use '../../styles/partials/_reset' as *;
+
+.home {
+  &-container {
+    @include border;
+    background-color: $black;
+    max-width: 25%;
+    &--porfolio {
+      padding-left: 3rem;
+      &-img {
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        border-radius: 50%;
+      }
+      &-name {
+        font-size: $big;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

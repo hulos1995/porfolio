@@ -1,4 +1,5 @@
 import './Home.scss';
+import porfolio from '../../assets/Hoang.jpg';
 const Home: React.FC = () => {
   return (
     <>
@@ -6,7 +7,7 @@ const Home: React.FC = () => {
         <section className='home-container'>
           <div className='home-container--porfolio'>
             <img
-              src=''
+              src={porfolio}
               alt='image-porfolio'
               className='home-container--porfolio-img'
             />
