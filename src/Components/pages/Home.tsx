@@ -1,5 +1,12 @@
 import './Home.scss';
 import porfolio from '../../assets/Hoang.jpg';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import about from '../../assets/user.png';
+import projects from '../../assets/projects.png';
+import contact from '../../assets/contact.png';
+
 const Home: React.FC = () => {
   return (
     <>
@@ -14,25 +21,26 @@ const Home: React.FC = () => {
             <p className='home-container--porfolio-name'>Hoang Nguyen</p>
           </div>
           <div className='home-container--links'>
-            <img src='' alt='github' className='home-container--links-github' />
-            <img
-              src=''
-              alt='linkedin'
+            <FontAwesomeIcon
+              icon={faGithub}
+              className='home-container--links-github'
+            />
+            <FontAwesomeIcon
+              icon={faLinkedin}
               className='home-container--links-linkedin'
             />
           </div>
           <aside className='home-container-aside'>
             <div className='home-container-aside-home'>
-              <img
-                src=''
-                alt='home'
+              <FontAwesomeIcon
+                icon={faHouse}
                 className='home-container-aside-home-img'
               />
               <p className='home-container-aside-home-name'>Home</p>
             </div>
             <div className='home-container-aside-about'>
               <img
-                src=''
+                src={about}
                 alt='about'
                 className='home-container-aside-about-img'
               />
@@ -40,7 +48,7 @@ const Home: React.FC = () => {
             </div>
             <div className='home-container-aside-projects'>
               <img
-                src=''
+                src={projects}
                 alt='projects'
                 className='home-container-aside-projects-img'
               />
@@ -48,7 +56,7 @@ const Home: React.FC = () => {
             </div>
             <div className='home-container-aside-contact'>
               <img
-                src=''
+                src={contact}
                 alt='contact'
                 className='home-container-aside-contact-img'
               />
