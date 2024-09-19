@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import about from '../../assets/user.png';
 import projects from '../../assets/projects.png';
 import contact from '../../assets/contact.png';
-
+import demo from '../../assets/demo.jpg';
 const Home: React.FC = () => {
   return (
     <>
@@ -64,7 +64,11 @@ const Home: React.FC = () => {
             </div>
           </aside>
         </section>
-        <section className=''></section>
+        <section className='home-wrapper'>
+          <div className='home-wrapper-about'>
+            <p className='home-wrapper-about--text'></p>
+          </div>
+        </section>
       </main>
     </>
   );
