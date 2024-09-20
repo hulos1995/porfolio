@@ -65,9 +65,7 @@ const Home: React.FC = () => {
           </aside>
         </section>
         <section className='home-wrapper'>
-          <div className='home-wrapper-about'>
-            <p className='home-wrapper-about--text'></p>
-          </div>
+          <div className='home-wrapper-about'></div>
         </section>
       </main>
     </>
